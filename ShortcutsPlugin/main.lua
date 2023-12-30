@@ -42,17 +42,17 @@ function showDialog2()
   end
   print("1")
   --lgi module has been found
-  local Gtk2 = lgi.Gtk
+  Gtk2 = lgi.Gtk
   print("1.1")
-  local Gdk = lgi.Gdk
+  Gdk = lgi.Gdk
   print("1.2")
-  local assert = lgi.assert
+  assert = lgi.assert
   print("2")
-  local builder = Gtk.Builder()
+  builder = Gtk.Builder()
   assert(builder:add_from_file(sourcePath .. "dialog.glade"))
-  local ui = builder.objects
+  ui = builder.objects
   print("3")
-  local dialog = ui.dlgKeys
+  dialog = ui.dlgKeys
 
   print("99 llega hasta aca")
 
